@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>☭ THE SOVIET TEMPLE SYSTEM ☭ DATA OVERFLOW ☭ </title>
+    <style>
+        :root {
+            --vga-blue: #0000aa;
+            --vga-green: #00aa00;
+            --vga-cyan: #00aaaa;
+            --vga-red: #aa0000;
+            --vga-magenta: #aa00aa;
+            --vga-brown: #aa5500;
+            --vga-lightgray: #aaaaaa;
+            --vga-darkgray: #555555;
+            --vga-lightblue: #5555ff;
+            --vga-lightgreen: #55ff55;
+            --vga-lightcyan: #55ffff;
+            --vga-lightred: #ff5555;
+            --vga-lightmagenta: #ff55ff;
+            --vga-yellow: #ffff55;
+            --vga-white: #ffffff;
+            --vga-black: #000000;
+        }
+
+        body {
+            animation: temple-bg-blink 0.4s infinite steps(1) !important;
+            font-family: "Courier New", monospace;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+            padding: 8px;
+            overflow-x: hidden;
+        }
+
+        @keyframes temple-bg-blink {
+            0%   { background-color: var(--vga-blue);    color: var(--vga-white); }
+            20%  { background-color: var(--vga-red);     color: var(--vga-yellow); }
+            40%  { background-color: var(--vga-black);   color: var(--vga-lightcyan); }
+            60%  { background-color: var(--vga-magenta); color: var(--vga-lightgreen); }
+            80%  { background-color: var(--vga-darkgray); color: var(--vga-lightred); }
+            100% { background-color: var(--vga-brown);   color: var(--vga-white); }
+        }
+
+        a:link, a:visited, a:hover {
+            text-decoration: none;
+        }
+
+        .layout-table {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            border: 4px double var(--vga-white);
+            border-collapse: collapse;
+            background-color: var(--vga-black);
+        }
+
+        .system-header {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 4px double var(--vga-white);
+        }
+
+        .system-sidebar {
+            width: 220px;
+            vertical-align: top;
+            padding: 10px;
+            border-right: 4px double var(--vga-white);
+        }
+
+        .menu-title {
+            background-color: var(--vga-yellow);
+            color: var(--vga-black);
+            padding: 2px;
+            margin-bottom: 8px;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .system-content {
+            vertical-align: top;
+            padding: 12px;
+        }
+
+        th, td, a, h1, div, span, b, font, table, input, textarea, button, img {
+            animation: temple-vga-blink 0.3s infinite steps(1) !important;
+        }
+        @keyframes temple-vga-blink {
+            0%   { color: var(--vga-lightred);     border-color: var(--vga-lightgreen); }
+            25%  { color: var(--vga-lightcyan);    border-color: var(--vga-lightmagenta); }
+            50%  { color: var(--vga-yellow);       border-color: var(--vga-lightblue); }
+            75%  { color: var(--vga-lightgreen);   border-color: var(--vga-lightred); }
+            100% { color: var(--vga-white);        border-color: var(--vga-lightcyan); }
+        }
+
+        table.data-grid {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid var(--vga-white);
+            margin-top: 10px;
+        }
+        table.data-grid th {
+            background-color: var(--vga-darkgray);
+            padding: 4px;
+            border: 1px solid var(--vga-white);
+            text-align: left;
+            font-size: 11px;
+        }
+        table.data-grid td {
+            padding: 8px;
+            border: 1px solid var(--vga-white);
+            vertical-align: top;
+        }
+
+        .post-form-panel {
+            margin-top: 20px;
+            border: 4px dashed var(--vga-white);
+            padding: 10px;
+            background-color: var(--vga-black);
+        }
+        .form-row {
+            margin-bottom: 8px;
+        }
+        .form-row label {
+            display: block;
+            margin-bottom: 2px;
+        }
+        .form-row input, .form-row textarea {
+            width: 100%;
+            background-color: var(--vga-black);
+            border: 1px solid var(--vga-white);
+            padding: 4px;
+            box-sizing: border-box;
+        }
+        .form-row textarea {
+            height: 60px;
+            resize: none;
+        }
+        .submit-btn {
+            background-color: var(--vga-red);
+            border: 2px solid var(--vga-white);
+            padding: 6px 12px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .hex-box {
+            border: 1px dashed var(--vga-lightmagenta);
+            background-color: var(--vga-black);
+            padding: 4px;
+            font-size: 11px;
+            word-break: break-all;
+        }
+
+        .poster-preview-img {
+            width: 80px;
+            height: auto;
+            border: 1px solid var(--vga-white);
+            display: block;
+        }
+
+        marquee {
+            font-weight: bold;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="layout-table">
+        <tr>
+            <td colspan="2" class="system-header">
+                <h1><marquee scrollamount="16" behavior="alternate">[СССР_AGITPROP_POSTER_DIGITAL_ARCHIVE]</marquee></h1>
+                <marquee scrollamount="10" direction="left">WARNING: ACCESSING HISTORICAL SOVIET PROPAGANDA MATRIX // GOD_STATE: ACTIVE // ☭</marquee>
+            </td>
+        </tr>
+        <tr>
+            <td class="system-sidebar">
+                <div class="menu-title"><marquee scrollamount="4" behavior="alternate">/NAVIGATION/CHRONICLE</marquee></div>
+                <div style="line-height: 1.6; margin-bottom: 15px;">
+                    <marquee scrollamount="5" direction="left">- <a href="/">[ARCHIVE_TOP]</a></marquee>
+                    <marquee scrollamount="3" direction="right">- <a href="#catalog">[POSTER_CATALOG]</a></marquee>
+                    <marquee scrollamount="6" direction="left">- <a href="#post-form">[WRITE_POSTER_DATA]</a></marquee>
+                </div>
+                <div class="menu-title"><marquee scrollamount="5" behavior="alternate">SYSTEM_METRICS</marquee></div>
+                <div style="font-size: 11px; line-height: 1.4;">
+                    <marquee scrollamount="7" direction="left">TOTAL_RECORDS: 1424</marquee>
+                    <marquee scrollamount="6" direction="right">SERVER_STATUS: ONLINE</marquee>
+                    <marquee scrollamount="5" direction="up" style="height:50px;">FETCHING_DATA...<br>DECODING_KIRILL...<br>STREAMING_RAW...</marquee>
+                </div>
+            </td>
+
+            <td class="system-content">
+                <marquee scrollamount="8" direction="left">【同期中】ソビエト連邦アジプロポスターの画像メタデータをサーバーより動的取得中。切断しないでください。</marquee>
+
+                <table class="data-grid" id="catalog">
+                    <thead>
+                        <tr>
+                            <th width="15%"><marquee scrollamount="3" behavior="alternate">IMAGE</marquee></th>
+                            <th width="35%"><marquee scrollamount="4" behavior="alternate">POSTER_TITLE / DESCRIPTION</marquee></th>
+                            <th width="20%"><marquee scrollamount="5" behavior="alternate">ARTIST / YEAR</marquee></th>
+                            <th width="15%"><marquee scrollamount="3" behavior="alternate">SYSTEM_HASH</marquee></th>
+                            <th width="15%"><marquee scrollamount="6" behavior="alternate">FILE_LINK</marquee></th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-stream-target">
+                    </tbody>
+                </table>
+
+                <div class="post-form-panel" id="post-form">
+                    <div class="menu-title"><marquee scrollamount="6" behavior="alternate">[WRITE_NEW_AGITPROP_RECORD_TO_SERVER]</marquee></div>
+                    <form id="poster-submit-form" enctype="multipart/form-data">
+                        <div class="form-row">
+                            <label><marquee scrollamount="2" direction="left">POSTER_IMAGE (画像ファイル選択):</marquee></label>
+                            <input type="file" id="input-file" accept="image/*" required>
+                        </div>
+                        <div class="form-row">
+                            <label><marquee scrollamount="2" direction="left">TITLE_JA (日本語題):</marquee></label>
+                            <input type="text" id="input-title-ja" required placeholder="例: 祖国は汝を呼ぶ！">
+                        </div>
+                        <div class="form-row">
+                            <label><marquee scrollamount="3" direction="right">TITLE_RU (ロシア語題):</marquee></label>
+                            <input type="text" id="input-title-ru" required placeholder="例: Родина-мать зовет!">
+                        </div>
+                        <div class="form-row">
+                            <label><marquee scrollamount="2" direction="left">ARTIST / YEAR (制作者・製作年):</marquee></label>
+                            <input type="text" id="input-meta" required placeholder="例: イラクリ・トイゼ / 1941">
+                        </div>
+                        <div class="form-row">
+                            <label><marquee scrollamount="4" direction="right">DESCRIPTION (歴史的・芸術的解説):</marquee></label>
+                            <textarea id="input-desc" required placeholder="解説テキストを入力..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn"><marquee scrollamount="10" behavior="alternate">☭ COMMIT_RECORD_TO_SOVIET_SERVER ☭</marquee></button>
+                    </form>
+                </div>
+
+                <div style="margin-top: 15px; border: 4px double var(--vga-lightred); padding: 6px; text-align: center;">
+                    <marquee scrollamount="20" behavior="alternate">ATTENTION: THIS DATASET IS INTENDED FOR HISTORICAL AND ARTISTIC ARCHIVAL PURPOSES ONLY // ☭</marquee>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        const BACKEND_API = {
+            GET_POSTERS:  'https://myvideo-prox.onrender.com/api/posters',
+            SEND_POSTER:  'https://myvideo-prox.onrender.com/api/posters/create'
+        };
+
+        (function() {
+            setInterval(function() {
+                document.title = document.title.substring(1) + document.title.substring(0, 1);
+            }, 100); 
+        })();
+
+        async function fetchAndRenderPosters() {
+            try {
+                const response = await fetch(BACKEND_API.GET_POSTERS);
+                const posters = await response.json();
+                const tbody = document.getElementById('data-stream-target');
+                tbody.innerHTML = '';
+
+                posters.forEach(poster => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>
+                            <marquee scrollamount="3" behavior="alternate" direction="up" style="height:90px;">
+                                <marquee scrollamount="2" behavior="alternate">
+                                    <img src="${poster.image_url}" class="poster-preview-img" alt="Poster">
+                                </marquee>
+                            </marquee>
+                        </td>
+                        <td>
+                            <b><marquee scrollamount="5" direction="left">${poster.title_ja}</marquee></b>
+                            <font><marquee scrollamount="3" direction="right">${poster.title_ru}</marquee></font>
+                            <div style="margin-top: 4px;">
+                                <marquee scrollamount="6" behavior="alternate" scrolldelay="60">${poster.description}</marquee>
+                            </div>
+                        </td>
+                        <td>
+                            <marquee scrollamount="2" direction="up" style="height:45px;">${poster.artist_year}</marquee>
+                        </td>
+                        <td>
+                            <div class="hex-box">
+                                <marquee scrollamount="8" direction="left">${poster.hex_id}</marquee>
+                            </div>
+                        </td>
+                        <td>
+                            <marquee scrollamount="5" behavior="alternate"><a href="${poster.image_url}" target="_blank">[VIEW_RAW]</a></marquee>
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            } catch (err) {
+                console.error("DATA FETCH ERROR:", err);
+            }
+        }
+
+        document.getElementById('poster-submit-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            formData.append('file', document.getElementById('input-file').files[0]);
+            formData.append('title_ja', document.getElementById('input-title-ja').value);
+            formData.append('title_ru', document.getElementById('input-title-ru').value);
+            formData.append('artist_year', document.getElementById('input-meta').value);
+            formData.append('description', document.getElementById('input-desc').value);
+
+            try {
+                const response = await fetch(BACKEND_API.SEND_POSTER, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    document.getElementById('poster-submit-form').reset();
+                    fetchAndRenderPosters();
+                } else {
+                    alert("SERVER REFUSED COMMITTING");
+                }
+            } catch (err) {
+                console.error("DATA UPLOAD ERROR:", err);
+            }
+        });
+
+        window.onload = fetchAndRenderPosters;
+    </script>
+</body>
+  </html>
